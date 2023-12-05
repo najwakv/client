@@ -1,0 +1,44 @@
+.moving-text-offer {
+  background-color: #f28123;
+  text-align: center;
+}
+
+.moving-text {
+  display: inline-block;
+  animation: moveText 10s linear infinite;
+}
+
+@keyframes moveText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.offer-title {
+  font-weight: bold;
+}
+
+.offer-discount {
+  font-size: 1.2em;
+}
+
+.offer-programs {
+  font-style: italic;
+}
+
+@media only screen and (max-width: 600px) {
+  .offer-title {
+    font-size: 1em;
+  }
+
+  .offer-discount {
+    font-size: 1em;
+  }
+
+  .offer-programs {
+    font-size: 1em;
+  }
+}
